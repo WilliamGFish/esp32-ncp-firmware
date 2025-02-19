@@ -1,0 +1,11 @@
+name: Build ESP-AT Project
+
+on: push
+
+jobs:
+  build-esp32-argon-at:
+    uses: ./.github/workflows/build_template_esp32.yml
+    with:
+      module_name: ARGON
+      artifacts_name: argon-at
+    secrets: inherit
