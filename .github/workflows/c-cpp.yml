@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: make
-      run: make PLATFORM=argon defconfig
+      run: make PLATFORM=argon
     - name: make check
       run: make check
     - name: make distcheck
